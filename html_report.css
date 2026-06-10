@@ -1,0 +1,106 @@
+/* Report layout and readability */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fb;
+  color: #1f2a38;
+}
+
+#title {
+  font-size: 2.4rem;
+  margin-bottom: 0.15rem;
+  color: #0d3b66;
+}
+
+body > p {
+  display: none !important;
+}
+
+#environment-header,
+#environment {
+  display: none !important;
+}
+
+.summary {
+  background: #ffffff;
+  border: 1px solid #dce4ed;
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 22px;
+}
+
+.summary h2,
+#environment-header h2 {
+  color: #0d3b66;
+}
+
+.summary .run-count {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #174b79;
+}
+
+.summary .filter {
+  font-size: 0.95rem;
+  color: #42526e;
+}
+
+.results-table th {
+  background: #eef4fb;
+  color: #1f3250;
+  font-weight: 700;
+}
+
+.results-table td {
+  padding: 0.85rem 0.85rem;
+}
+
+.results-table .passed {
+  background: #e8f6ed;
+  border-left: 4px solid #1f8a4f;
+}
+
+.results-table .failed {
+  background: #ffe9ea;
+  border-left: 4px solid #c5282c;
+}
+
+.results-table .skipped,
+.results-table .error,
+.results-table .xfailed,
+.results-table .xpassed {
+  background: #fff7e6;
+  border-left: 4px solid #c47d1f;
+}
+
+.collapsible {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #d8e1ec;
+}
+
+.collapsible td {
+  border: none;
+}
+
+.extraHTML,
+.logwrapper {
+  background: #f6f9ff;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+button#show_all_details,
+button#hide_all_details {
+  background: #1f73d6;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+button#show_all_details:hover,
+button#hide_all_details:hover {
+  background: #1658b4;
+}
